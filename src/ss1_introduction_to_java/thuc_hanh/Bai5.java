@@ -1,4 +1,4 @@
-package ss1_java.thuc_hanh;
+package ss1_introduction_to_java.thuc_hanh;
 
 import java.util.Scanner;
 
@@ -36,7 +36,7 @@ public class Bai5 {
         String daysInMonth;
         switch (month) {
             case 2:
-                daysInMonth = ":28 of 29";
+                daysInMonth = ":28 of 29 ngày";
                 break;
             case 1:
             case 3:
@@ -44,22 +44,23 @@ public class Bai5 {
             case 7:
             case 10:
             case 12:
-                daysInMonth = ": có 31";
+                daysInMonth = ": có 31 ngày";
                 break;
             case 4:
             case 6:
             case 9:
             case 11:
-                daysInMonth = ": có 30";
+                daysInMonth = ": có 30 ngày";
                 break;
             default:
                 daysInMonth = "";
         }
         if (daysInMonth != "") {
-            System.out.println("The month '%d' has %s days! "+ month + daysInMonth);
+            System.out.println("The month has days! "+ month + daysInMonth);
 
         } else {
             System.out.println("Invalid input!");
+
         }
     }
 }
