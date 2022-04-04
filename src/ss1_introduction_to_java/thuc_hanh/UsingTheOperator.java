@@ -3,7 +3,7 @@ package ss1_introduction_to_java.thuc_hanh;
 
 import java.util.Scanner;
 
-public class Bai3 {
+public class UsingTheOperator {
 
     public static void main(String[] args) {
         float width;

@@ -2,8 +2,9 @@ package ss1_introduction_to_java.bai_tap;
 
 import java.util.Scanner;
 
-public class DocSoThanhChu {
+public class ReadNumbersIntoWords {
     public static void main(String[] args) {
+        // ĐỌC SỐ THÀNH CHỮ
         int number;
         Scanner sc = new Scanner(System.in);
         System.out.println("số cần đọc");

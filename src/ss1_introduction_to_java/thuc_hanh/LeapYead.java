@@ -2,11 +2,12 @@ package ss1_introduction_to_java.thuc_hanh;
 
 import java.util.Scanner;
 
-public class Bai6 {
+public class LeapYead {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int year;
         year = scanner.nextInt();
+        // năm nhuận
 
 //        System.out.println("enter a yead");
 //        year = scanner.nextInt();

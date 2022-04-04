@@ -2,8 +2,9 @@ package ss1_introduction_to_java.bai_tap;
 
 import java.util.Scanner;
 
-public class ChuyenDoiTienTe {
+public class CurrencyConversion {
     public static void main(String[] args) {
+        // CHUYỂN ĐỔI TIỀN TỆ
         double vnd = 23000;
         double usd;
         Scanner tinh = new Scanner(System.in);
