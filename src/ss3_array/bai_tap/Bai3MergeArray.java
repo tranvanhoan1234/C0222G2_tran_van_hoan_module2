@@ -21,6 +21,7 @@ public class Bai3MergeArray {
             System.out.print(array1[i] + "\t");
         }
         System.out.println();
+        // gộp phần tử vào cột hàng mảng array2
         int col = 0;
         for (int i = 0; i < array2.length; i++) {
             if (i < array.length) {
@@ -29,9 +30,8 @@ public class Bai3MergeArray {
                 array2[i] = array1[col];
                 col++;
             }
-        }
-        for (int a : array2) {
-            System.out.print(a + " ");
+        } for (int a : array2) {
+            System.out.print(a);
         }
     }
 }

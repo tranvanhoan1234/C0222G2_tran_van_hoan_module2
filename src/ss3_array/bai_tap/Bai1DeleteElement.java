@@ -21,21 +21,21 @@ public class Bai1DeleteElement {
     }
 
     public static void f(int x, int[] array) {
-        int count = 0;
+        int index = 0;
         boolean flag = false;
         for (int i = 0; i < array.length; i++) { // tìm vị trí xuất hiện phần tử muốn xóa
             if (x == array[i]) {
-                count = i; // nếu có gắn cho count
+                index = i; // nếu có gắn cho index
                 flag = true;
                 break;
             }
         }
         if (flag) {
-            System.out.println("index x: " + count);
-            for (int i = count; i < array.length - 1; i++) {
-                array[i] = array[i + 1];// count sẽ đè lên vị trí kế tiếp của nó
+            System.out.println("index x: " + index);
+            for (int i = index; i < array.length - 1; i++) {
+                array[i] = array[i + 1];// index sẽ đè lên vị trí kế tiếp của nó
             }
-            array[array.length - 1] = 0;
+//            array[array.length - 1] = 0;
             System.out.println("new arr"); //nếu phần tử ở i dc xóa thì phần tử cuối thụt lên = 0;
             for (int a : array) {
                 System.out.println(a);
