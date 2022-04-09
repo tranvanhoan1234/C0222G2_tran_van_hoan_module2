@@ -6,11 +6,17 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Circle cl = new Cylinder();
-        System.out.println("chu vi là: " + cl.getAcreage());
-        System.out.println("bán kính là: " + cl.getRadius());
-        Cylinder cd= new Cylinder();
-        System.out.println("thể tích hình tròn là: "+cd.getVolume());
+        Circle cl = new Circle();
+        Cylinder cd = new Cylinder();
+        Scanner sc = new Scanner(System.in);
+        System.out.print("enter a radius: ");
+        double radius = Double.parseDouble(sc.nextLine());
+        cl.setRadius(radius);
+        System.out.println(cl.toString());
+        System.out.print("enter a height: ");
+        double height = Double.parseDouble(sc.nextLine());
+        cd.setHeight(height);
+        System.out.println(cd.toString());
     }
 }
 

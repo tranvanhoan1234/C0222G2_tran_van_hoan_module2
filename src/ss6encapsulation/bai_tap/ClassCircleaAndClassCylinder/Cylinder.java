@@ -3,9 +3,7 @@ package ss6encapsulation.bai_tap.ClassCircleaAndClassCylinder;
 import java.util.Scanner;
 
 public class Cylinder extends Circle {
-    protected double height=5.3;
-    protected double wight = 10.5;
-    protected double volume;
+    protected double height = 5.3;
 
     public Cylinder() {
 
@@ -19,30 +17,28 @@ public class Cylinder extends Circle {
         this.height = height;
     }
 
-    public double getWight() {
-        return wight;
+    public double surroundingArea() {
+        return super.getPerimeter() * this.height;
     }
 
-    public void setWight(double wight) {
-        this.wight = wight;
+    public double totalArea() {
+        return this.surroundingArea() + 2 * super.getArea();
 
     }
 
-    public double getVolume() {
-        return this.height*Math.PI*this.wight*this.wight;
-    }
+    public double volume() {
+        return super.getArea() * this.height;
 
-    public void setVolume(double volume) {
-
-        this.volume = volume;
     }
 
     @Override
     public String toString() {
         return "Cylinder{" +
-                "height=" + height +
-                ", wight=" + wight +
-                ", volume=" + volume +
+                " surroundingArea= " + this.surroundingArea() +
+                " totalArea= " + this.totalArea() +
+                " volume= " + this.volume() +
+                " height=" + height +
+
                 '}';
-         }
+    }
 }
