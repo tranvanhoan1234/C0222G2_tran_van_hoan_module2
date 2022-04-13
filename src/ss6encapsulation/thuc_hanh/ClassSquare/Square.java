@@ -1,9 +1,8 @@
 package ss6encapsulation.thuc_hanh.ClassSquare;
 
-
 import ss6encapsulation.thuc_hanh.ClassRectangle.Rectangle;
 
-public class Square extends Rectangle {
+    public class Square extends Rectangle {
     public Square() {
     }
 
@@ -24,15 +23,8 @@ public class Square extends Rectangle {
         setLength(side);
     }
 
-    @Override
-    public void setWidth(double width) {
-        setSide(width);
-    }
 
-    @Override
-    public void setLength(double length) {
-        setSide(length);
-    }
+
 
     @Override
     public String toString() {
@@ -41,5 +33,6 @@ public class Square extends Rectangle {
                 + ", which is a subclass of "
                 + super.toString();
     }
+
 
 }

@@ -3,8 +3,8 @@ package ss6encapsulation.bai_tap.ClassPointAndClassMoveablePoint;
 import java.util.Arrays;
 
 public class Point {
-    public float x;
-    public float y;
+    private float x;
+    private float y;
 
     public Point() {
 

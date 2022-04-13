@@ -1,7 +1,4 @@
-package ss6encapsulation.thuc_hanh.ClassRectangle;
-
-
-import ss6encapsulation.thuc_hanh.ClassShape.Shape;
+package ss7_abstract_interface.bai_tap.interface_class_resizeable;
 
 public class Rectangle extends Shape {
     private double width = 1.0;
@@ -53,6 +50,9 @@ public class Rectangle extends Shape {
                 + getLength()
                 + ", which is a subclass of "
                 + super.toString();
+    }@Override
+    public double resize(double percent) {
+
+        return this.length*=percent;
     }
 }
-

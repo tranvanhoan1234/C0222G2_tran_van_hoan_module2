@@ -2,8 +2,8 @@ package ss6encapsulation.bai_tap.ClassPointAndClassMoveablePoint;
 
 
 public class MovablePoint extends Point {
-    public float xSpeed ;
-    public float ySpeed ;
+    private float xSpeed ;
+    private float ySpeed ;
 
     public MovablePoint() {
 
