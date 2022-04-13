@@ -43,6 +43,9 @@ public class Circle extends Shape {
     public double resize(double percent) {
         return this.radius *= percent;
     }
-
+    @Override
+    public void howToColor() {
+        System.out.println("Color all four sides.");
+    }
 
 }

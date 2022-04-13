@@ -1,8 +1,8 @@
 package ss7_abstract_interface.bai_tap.interface_class_resizeable;
-
+//
 public class Rectangle extends Shape {
-    private double width = 1.0;
-    private double length = 1.0;
+    private double width ;
+    private double length ;
 
     public Rectangle() {
     }
@@ -12,11 +12,7 @@ public class Rectangle extends Shape {
         this.length = length;
     }
 
-    public Rectangle(double width, double length, String color, boolean filled) {
-        super(color, filled);
-        this.width = width;
-        this.length = length;
-    }
+
 
     public double getWidth() {
         return width;
@@ -54,5 +50,10 @@ public class Rectangle extends Shape {
     public double resize(double percent) {
 
         return this.length*=percent;
+    }
+
+    @Override
+    public void howToColor() {
+
     }
 }
