@@ -51,11 +51,20 @@ public abstract class Vehicle {
     public void setOwner(String owner) {
         this.owner = owner;
     }
+
     public void input(){
         Scanner sc =new Scanner(System.in);
         System.out.println("enter biển kiểm soát: ");
         this.seaOfControl=sc.nextLine();
 
+        System.out.println("enter hãng : ");
+        this.munufactureru = choseManufacture();
+
+        System.out.println("enter năm sản xuất: ");
+        this.yearOfManufacture = sc.nextInt();
+
+        System.out.println("enter chủ sở hưu: ");
+        this.owner = sc.nextLine();
     }
     public Munufacturer choseManufacture(){
         Scanner scanner=new Scanner(System.in);

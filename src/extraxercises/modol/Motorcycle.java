@@ -12,14 +12,20 @@ public class Motorcycle extends Vehicle {
         return motorcycle;
     }
 
+    public void setMotorcycle(double motorcycle) {
+        this.motorcycle = motorcycle;
+    }
+
     public Motorcycle(double motorcycle) {
         this.motorcycle = motorcycle;
     }
 
-    public Motorcycle(String seaOfControl, String manufacturersName, int yearOfManufacture, String owner, double motorcycle) {
-        super(seaOfControl, manufacturersName, yearOfManufacture, owner);
+    public Motorcycle(String seaOfControl, Munufacturer munufactureru, int yearOfManufacture, String owner, double motorcycle) {
+        super(seaOfControl, munufactureru, yearOfManufacture, owner);
         this.motorcycle = motorcycle;
     }
+
+
 
     @Override
     public String toString() {
