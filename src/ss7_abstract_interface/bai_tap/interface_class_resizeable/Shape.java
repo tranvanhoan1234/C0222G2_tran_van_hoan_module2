@@ -40,4 +40,5 @@ public abstract class Shape {
     public abstract double resize(double percent);
 
 
+    public abstract void howToColor();
 }
