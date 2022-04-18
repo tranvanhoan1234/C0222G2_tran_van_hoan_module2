@@ -5,9 +5,11 @@ import java.util.Stack;
 public class reverse_stack {
     public static void main(String[] args) {
 
+
+
 //        Scanner scanner = new Scanner(System.in);
         Stack<Integer> stack = new Stack<>();
-//        System.out.println("nhập CÁI L GÌ BẠN THÍCH bạn ây");
+//        System.out.println("nhập CÁI GÌ BẠN THÍCH");
 //        String s = scanner.nextLine();
 //        for (int i = 0; i < s.length(); i++) {
 //            stack.push(s.charAt(i) + "");
