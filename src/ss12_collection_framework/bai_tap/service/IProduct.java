@@ -1,4 +1,4 @@
-package ss12_collection_framework.bai_tap.sevirce;
+package ss12_collection_framework.bai_tap.service;
 
 public interface IProduct {
 

@@ -1,10 +1,10 @@
-package ss12_collection_framework.bai_tap.sevirce;
+package ss12_collection_framework.bai_tap.service;
 
-import ss12_collection_framework.bai_tap.modol.Product;
+import ss12_collection_framework.bai_tap.model.Product;
 
 import java.util.*;
 
-public class ProductManager implements IProduct {
+public class ProductSevirce implements IProduct {
     private static Scanner scanner = new Scanner(System.in);
     private static List<Product> products = new ArrayList<>();
 

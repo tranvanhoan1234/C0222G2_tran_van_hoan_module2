@@ -1,4 +1,4 @@
-package ss12_collection_framework.bai_tap.modol;
+package ss12_collection_framework.bai_tap.model;
 
 public class Product {
     private Integer id;

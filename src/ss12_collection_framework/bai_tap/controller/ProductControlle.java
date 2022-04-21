@@ -1,12 +1,12 @@
 package ss12_collection_framework.bai_tap.controller;
 
-import ss12_collection_framework.bai_tap.sevirce.ProductManager;
+import ss12_collection_framework.bai_tap.service.ProductSevirce;
 
 import java.util.Scanner;
 
 public class ProductControlle {
     private static Scanner scanner = new Scanner(System.in);
-    private static ProductManager productManager = new ProductManager();
+    private static ProductSevirce productManager = new ProductSevirce();
 
     public void displayProductMenu() {
 

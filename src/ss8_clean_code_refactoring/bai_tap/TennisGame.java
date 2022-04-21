@@ -1,5 +1,7 @@
 package ss8_clean_code_refactoring.bai_tap;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.Scanner;
 
 public class TennisGame {
@@ -26,11 +28,7 @@ public class TennisGame {
             }
         }
         else if (firstScore>=4 || secondScore>=4) {
-            int minusResult = firstScore-secondScore;
-            if (minusResult==1) count ="Advantage player1";
-            else if (minusResult ==-1) count ="Advantage player2";
-            else if (minusResult>=2) count = "Win for player1";
-            else count ="Win for player2";
+            count = getString(firstScore, secondScore);
         } else {
             for (int i=1; i<3; i++)
             {
@@ -48,6 +46,17 @@ public class TennisGame {
                 }
             }
         }
+        return count;
+    }
+
+    @NotNull
+    private static String getString(int firstScore, int secondScore) {
+        String count;
+        int minusResult = firstScore - secondScore;
+        if (minusResult==1) count ="Advantage player1";
+        else if (minusResult ==-1) count ="Advantage player2";
+        else if (minusResult>=2) count = "Win for player1";
+        else count ="Win for player2";
         return count;
     }
 
