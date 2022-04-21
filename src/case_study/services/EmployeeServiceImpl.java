@@ -36,20 +36,56 @@ public abstract class EmployeeServiceImpl implements IEmployeeService {
         Long phoneNumber = Long.valueOf(scanner.nextLine());
         System.out.println("nhập email muốn thêm: ");
         String email = scanner.nextLine();
-        System.out.println("nhập mã nhân viên muốn thêm muốn thêm: ");
+        System.out.println("nhập mã nhân viên muốn thêm: ");
         Integer employeeCode = Integer.valueOf(scanner.nextLine());
-        System.out.println("nhập chức vụ muốn thêm muốn thêm: ");
+        System.out.println("nhập vị trí nhân viên muốn thêm: ");
         String position = scanner.nextLine();
- System.out.println("nhập lương muốn thêm muốn thêm: ");
+        System.out.println("nhập lương muốn thêm muốn thêm: ");
         Double salary = Double.valueOf(scanner.nextLine());
-        Employee employee = new Employee(fullName,dateOfBirth,gender,identityCard,phoneNumber,email,employeeCode,position,salary);
-employeeList.add(employee);
+        Employee employee = new Employee(fullName, dateOfBirth, gender, identityCard, phoneNumber, email, employeeCode, position, salary);
+        employeeList.add(employee);
     }
+
     @Override
     public void display() {
-        for (Person furamaController :employeeList ) {
+        for (Person furamaController : employeeList) {
             System.out.println(furamaController);
+            break;
         }
 
+
+    }
+
+    @Override
+    public void edit() {
+        System.out.println("Nhập tên nhân viên cần sửa: ");
+        String fullName = scanner.nextLine();
+        for (int i = 0; i < employeeList.size(); i++) {
+            //kiểu không dc so sánh 2 dấu bằng hãy sử dụng equa container timg kiêm gần chính sác
+            if (employeeList.get(i).getFullName().equals(fullName)) {
+                System.out.println("sửa fullname: ");
+//    fullName,dateOfBirth,gender,identityCard,phoneNumber,email,employeeCode,position,salary
+                employeeList.get(i).setFullName(scanner.nextLine());
+                System.out.println("sửa ngày sinh: ");
+                employeeList.get(i).setDateOfBirth(scanner.nextLine());
+                System.out.println("sửa giới tính: ");
+                employeeList.get(i).setGender(scanner.nextLine());
+                System.out.println("sửa số cmnd: ");
+                employeeList.get(i).setIdentityCard(Integer.valueOf(scanner.nextLine()));
+                System.out.println("sửa số điện thoại: ");
+                employeeList.get(i).setPhoneNumber(Long.valueOf(scanner.nextLine()));
+                System.out.println("sửa email: ");
+                employeeList.get(i).setEmail(scanner.nextLine());
+                System.out.println("sửa mã nhân viên: ");
+                employeeList.get(i).setEmployeeCode(Integer.valueOf(scanner.nextLine()));
+                System.out.println("sửa chức vụ nhân viên : ");
+                employeeList.get(i).setPosition(scanner.nextLine());
+                System.out.println("sửa lương nhân viên : ");
+                employeeList.get(i).setSalary(Double.valueOf(scanner.nextLine()));
+
+            }
+
+        }
+        display();
     }
 }

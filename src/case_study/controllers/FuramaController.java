@@ -31,22 +31,21 @@ public class FuramaController {
                 case 4:
                     displayListFacilityManagement();
                 case 5:
-
+                case 6:
+                    flag = false;
                     System.exit(6);
                     break;
-//
-//
             }
         } while (false);
     }
 
     public void displayEmployeeManagement() {
+
         EmployeeServiceImpl employeeService = new EmployeeServiceImpl() {
-
-
         };
         boolean flag = true;
         do {
+
             System.out.println("..........main menu...........");
             System.out.println("1\tDisplay list employees\n" +
                     "2\tAdd new employee\n" +
@@ -60,8 +59,9 @@ public class FuramaController {
                 case 2:
                     employeeService.add();
                 case 3:
+                    employeeService.edit();
                 case 4:
-                case 5:
+                    System.exit(4);
                 default:
                     System.out.println();
                     break;
