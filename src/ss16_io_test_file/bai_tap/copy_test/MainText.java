@@ -1,4 +1,4 @@
-package ss16_io_test_file.bai_tap;
+package ss16_io_test_file.bai_tap.copy_test;
 
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
