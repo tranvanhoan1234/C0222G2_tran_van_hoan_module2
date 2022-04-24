@@ -47,6 +47,7 @@ public class Student implements Comparable<Student>{
     public int compareTo(Student student) {
         return this.getName().compareTo(student.getName());
     }
+
 }
 
 

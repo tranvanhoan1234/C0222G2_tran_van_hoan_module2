@@ -20,7 +20,8 @@ public class main {
                 System.out.println(a);
                 System.out.println(b);
                 System.out.println(c);
-            } catch (Exception e) {
+            } catch (RuntimeException e) {
+
                 flag = false;
                 if (a <= -1 || b <= 0 || c <= 0) {
                     System.out.println("không phải là tam giác: ");
@@ -30,6 +31,7 @@ public class main {
                 }else {
                     System.out.println("nhập sai giữ liệu");
                 }
+                System.out.println("thoat");
             }
 
         }
