@@ -11,7 +11,7 @@ public class FuramaController {
     public void displayMainMenu() {
         boolean flag = true;
         do {
-            System.out.println("..........main menu...........");
+            System.out.println("..........Main menu...........");
 
             System.out.println("1.\tEmployee Management\n" +
                     "2.\tCustomer Management\n" +
@@ -46,11 +46,11 @@ public class FuramaController {
         boolean flag = true;
         do {
 
-            System.out.println("..........main menu...........");
+            System.out.println("..........Main menu...........");
             System.out.println("1\tDisplay list employees\n" +
                     "2\tAdd new employee\n" +
                     "3\tEdit employee\n" +
-                    "4\tReturn main menu\n");
+                    "4\tReturn Main menu\n");
             System.out.println("xin mời bạn chọn: ");
             int choice = Integer.parseInt(scanner.nextLine());
             switch (choice) {
@@ -73,11 +73,11 @@ public class FuramaController {
     public void displayListCustomersManagement() {
         boolean flag = true;
         do {
-            System.out.println("..........main menu...........");
+            System.out.println("..........Main menu...........");
             System.out.println("1.\tDisplay list customers\n" +
                     "2.\tAdd new customer\n" +
                     "3.\tEdit customer\n" +
-                    "4.\tReturn main menu\n");
+                    "4.\tReturn Main menu\n");
             System.out.println("xin mời bạn chọn: ");
             int choice = Integer.parseInt(scanner.nextLine());
             switch (choice) {
@@ -97,11 +97,11 @@ public class FuramaController {
     public void displayListFacilityManagement() {
         boolean flag = true;
         do {
-            System.out.println("..........main menu...........");
+            System.out.println("..........Main menu...........");
             System.out.println("1\tDisplay list facility\n" +
                     "2\tAdd new facility\n" +
                     "3\tDisplay list facility maintenance\n" +
-                    "4\tReturn main menu\n");
+                    "4\tReturn Main menu\n");
             System.out.println("xin mời bạn chọn: ");
             int choice = Integer.parseInt(scanner.nextLine());
             switch (choice) {
@@ -121,13 +121,13 @@ public class FuramaController {
     public void addNewBookingManagement() {
         boolean flag = true;
         do {
-            System.out.println("..........main menu...........");
+            System.out.println("..........Main menu...........");
             System.out.println("1.\tAdd new booking\n" +
                     "2.\tDisplay list booking\n" +
                     "3.\tCreate new constracts\n" +
                     "4.\tDisplay list contracts\n" +
                     "5.\tEdit contracts\n" +
-                    "6.\tReturn main menu\n");
+                    "6.\tReturn Main menu\n");
             System.out.println("xin mời bạn chọn: ");
             int choice = Integer.parseInt(scanner.nextLine());
             switch (choice) {
@@ -147,10 +147,10 @@ public class FuramaController {
     public void listCustomersUseServiceManagement() {
         boolean flag = true;
         do {
-            System.out.println("..........main menu...........");
+            System.out.println("..........Main menu...........");
             System.out.println("1.\tDisplay list customers use service\n" +
                     "2.\tDisplay list customers get voucher\n" +
-                    "3.\tReturn main menu\n");
+                    "3.\tReturn Main menu\n");
             System.out.println("xin mời bạn chọn: ");
             int choice = Integer.parseInt(scanner.nextLine());
             switch (choice) {
@@ -170,7 +170,7 @@ public class FuramaController {
     public void promotionManagement() {
         boolean flag = true;
         do {
-            System.out.println("..........main menu...........");
+            System.out.println("..........Main menu...........");
             System.out.println("1.\t‘//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’");
             System.out.println("xin mời bạn chọn: ");
             int choice = Integer.parseInt(scanner.nextLine());

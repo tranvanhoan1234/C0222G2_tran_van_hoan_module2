@@ -1,3 +1,5 @@
+package bai_tap_dau_kho;
+
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
