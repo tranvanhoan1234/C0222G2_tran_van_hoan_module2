@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 
 public class ClassLearn {
 //    [A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)
-    private static final String ACCOUNT_REGEX = "^[C-Za-z0-9]+[0-4]{4}+[A-Za]$";
+    private static final String ACCOUNT_REGEX = "^[CAD]+[0-9]{4}+[GHIKLM]$";
 
     public ClassLearn() {
     }

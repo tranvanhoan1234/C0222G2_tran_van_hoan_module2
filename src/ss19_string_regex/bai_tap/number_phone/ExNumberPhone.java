@@ -4,7 +4,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class ExNumberPhone {
-    private static final String ACCOUNT_REGEX = "^[84]+[0-9\\-]{10}$";
+    private static final String ACCOUNT_REGEX = "^[0-9]{2}+-[0-9]{10}$";
 
     public ExNumberPhone() {
     }
