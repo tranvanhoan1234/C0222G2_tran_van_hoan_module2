@@ -6,9 +6,6 @@ public class Employee extends Person {
     private String position;
     private Double salary;
 
-    public Employee() {
-    }
-
     public Employee(Integer employeeCode, String position, Double salary) {
         this.employeeCode = employeeCode;
         this.position = position;
@@ -51,12 +48,16 @@ public class Employee extends Person {
 
     @Override
     public String toString() {
-        return "Employee{" +
+        return "Employee{ " +
                 super.toString() +
                 "employeeCode=" + employeeCode +
                 ", position='" + position + '\'' +
-                ", salary=" + salary +
-                '}';
+                ", salary=" + salary;
+    }
+
+    @Override
+    public String wriderPerson() {
+        return super.wriderPerson()+","+employeeCode+","+position+","+salary;
     }
 }
 

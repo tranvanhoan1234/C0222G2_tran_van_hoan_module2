@@ -8,9 +8,9 @@ public class House extends Facility {
     public House() {
     }
 
-    public House(String serviceName, Double usableArea, Double taxExpenses, Double maximumNumberOfPeople,
-                 Double rentalType, String roomStandard, Integer numberOfFloors) {
-        super(serviceName, usableArea, taxExpenses, maximumNumberOfPeople, rentalType);
+    public House(String serviceId, String serviceName, Double usableArea, Integer taxExpenses, Integer maximumNumberOfPeople,
+                 String rentalType, String roomStandard, Integer numberOfFloors) {
+        super(serviceId, serviceName, usableArea, taxExpenses, maximumNumberOfPeople, rentalType);
         this.roomStandard = roomStandard;
         this.numberOfFloors = numberOfFloors;
     }
@@ -33,9 +33,18 @@ public class House extends Facility {
 
     @Override
     public String toString() {
-        return "House{" +
-                "roomStandard='" + roomStandard + '\'' +
-                ", numberOfFloors=" + numberOfFloors +
-                '}';
+        return "House" +"serviceId: "+getServiceId()+
+                " serviceName: " + super.getServiceName() +
+                ", usableArea: " +super.getUsableArea() +
+                ", taxExpenses: " + super.getRentalCosts()+
+                ", maximumNumberOfPeople: " + super.getMaximumNumberOfPeople()+
+                ", rentalType: " + super.getRentalType()+
+                "roomStandard: '" + roomStandard +
+                ", numberOfFloors: " + numberOfFloors;
+    }
+
+    @Override
+    public String wriderFacility() {
+        return super.wriderFacility()+","+roomStandard+","+numberOfFloors;
     }
 }

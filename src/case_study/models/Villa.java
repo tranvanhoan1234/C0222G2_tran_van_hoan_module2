@@ -10,8 +10,8 @@ public class Villa extends Facility {
     public Villa() {
     }
 
-    public Villa(String serviceName, Double usableArea, Double taxExpenses, Double maximumNumberOfPeople, Double rentalType, String soomStandard, Double poolArea, Integer numberOfFloors) {
-        super(serviceName, usableArea, taxExpenses, maximumNumberOfPeople, rentalType);
+    public Villa(String serviceId ,String serviceName, Double usableArea, Integer taxExpenses, Integer maximumNumberOfPeople, String rentalType, String soomStandard, Double poolArea, Integer numberOfFloors) {
+        super( serviceId,serviceName, usableArea, taxExpenses, maximumNumberOfPeople, rentalType);
         this.soomStandard = soomStandard;
         this.poolArea = poolArea;
         this.numberOfFloors = numberOfFloors;
@@ -43,10 +43,15 @@ public class Villa extends Facility {
 
     @Override
     public String toString() {
-        return "Villa{" +
-                "soomStandard='" + soomStandard + '\'' +
-                ", poolArea=" + poolArea +
-                ", numberOfFloors=" + numberOfFloors +
-                '}';
+        return "Villa" +
+                super.toString()+
+                "soomStandard: " + soomStandard +
+                ", poolArea: " + poolArea +
+                ", numberOfFloors: " + numberOfFloors;
+    }
+
+    @Override
+    public String wriderFacility() {
+        return super.wriderFacility()+","+soomStandard+","+poolArea+","+numberOfFloors;
     }
 }

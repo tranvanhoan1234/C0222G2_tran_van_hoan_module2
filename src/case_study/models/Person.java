@@ -20,7 +20,7 @@ public abstract class Person {
         this.dateOfBirth = dateOfBirth;
         this.gender = gender;
         this.identityCard = identityCard;
-        this.phoneNumber=phoneNumber;
+        this.phoneNumber = phoneNumber;
         this.email = email;
     }
 
@@ -74,13 +74,17 @@ public abstract class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
+        return
                 "fullName='" + fullName + '\'' +
-                ", dateOfBirth='" + dateOfBirth + '\'' +
-                ", gender='" + gender + '\'' +
-                ", identityCard=" + identityCard +
-                ", phoneNumber=" + phoneNumber +
-                ", email='" + email + '\'' +
-                '}';
+                        ", dateOfBirth='" + dateOfBirth + '\'' +
+                        ", gender='" + gender + '\'' +
+                        ", identityCard=" + identityCard +
+                        ", phoneNumber=" + phoneNumber +
+                        ", email='" + email + '\'';
+    }
+
+    public String wriderPerson() {
+        return fullName + "," + dateOfBirth + "," + gender + "," + identityCard + "," + phoneNumber + "," + email;
+
     }
 }
